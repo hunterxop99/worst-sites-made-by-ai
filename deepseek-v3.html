@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WELCOME TO MY AWESOME SITE!!!</title>
+    <style>
+        body {
+            background-color: #FF00FF;
+            font-family: Comic Sans MS, cursive;
+            background-image: url('sparkle.gif');
+        }
+        .blink {
+            animation: blink 0.3s infinite;
+        }
+        @keyframes blink {
+            0% { color: red; }
+            25% { color: lime; }
+            50% { color: blue; }
+            75% { color: yellow; }
+            100% { color: pink; }
+        }
+        marquee {
+            font-size: 72px;
+        }
+        #counter {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+        .autoplay {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background music that autoplays -->
+    <audio class="autoplay" controls autoplay loop>
+        <source src="midi_song.mid" type="audio/midi">
+    </audio>
+
+    <!-- Blinking, scrolling text -->
+    <marquee class="blink" direction="up" behavior="alternate" scrollamount="20">
+        <marquee direction="right" behavior="alternate">WELCOME TO MY SITE!!!</marquee>
+    </marquee>
+
+    <!-- Random animated gifs -->
+    <img src="under_construction.gif" style="position: absolute; top: 50%; left: 50%;">
+    <img src="email_me.gif" style="position: absolute; top: 10px; right: 10px;">
+
+    <!-- Visitor counter -->
+    <div id="counter">
+        <img src="counter.gif"> Visitors: 999999999
+    </div>
+
+    <!-- Popup that appears immediately -->
+    <script>
+        alert("YOU ARE VISITOR NUMBER 999999999! CLICK OK FOR A FREE PRIZE!");
+        setTimeout(function() {
+            window.open("popup.html", "_blank", "width=300,height=200");
+        }, 1000);
+    </script>
+
+    <!-- Flashing background -->
+    <script>
+        var colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF"];
+        var i = 0;
+        setInterval(function() {
+            document.body.style.backgroundColor = colors[i];
+            i = (i + 1) % colors.length;
+        }, 300);
+    </script>
+</body>
+</html>
