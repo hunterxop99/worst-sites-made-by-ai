@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WELCOME TO HELL</title>
+  <style>
+    body {
+      background: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
+      color: lime;
+      font-family: Comic Sans MS, cursive;
+      text-align: center;
+      animation: blink 0.4s infinite alternate;
+    }
+
+    @keyframes blink {
+      0% { color: red; background-color: yellow; }
+      100% { color: lime; background-color: pink; }
+    }
+
+    marquee {
+      font-size: 24px;
+      font-weight: bold;
+      color: cyan;
+      background: purple;
+    }
+
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: hotpink;
+      padding: 20px;
+      border: 5px dashed limegreen;
+      z-index: 9999;
+    }
+
+    button {
+      background: neon;
+      border: 5px dotted red;
+      font-size: 18px;
+      padding: 10px;
+      color: black;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      filter: invert(100%);
+    }
+  </style>
+</head>
+<body>
+  <marquee>🔥🔥🔥 Welcome to the WORST Website in the Galaxy 🔥🔥🔥</marquee>
+  <h1>👹 THIS SITE SUCKS 👹</h1>
+  <p>Are your eyes bleeding yet? Good. That means it's working.</p>
+
+  <div class="popup">
+    <h2>🚨 WARNING 🚨</h2>
+    <p>You are not ready for this site.</p>
+    <button onclick="alert('Told you not to click!')">Don't Click Me</button>
+  </div>
+
+  <img src="https://media.tenor.com/-V3WRf5FHfQAAAAC/skull.gif" alt="skull gif">
+  <img src="https://media.tenor.com/DZUzYu6VfP8AAAAC/bad-internet.gif" alt="bad internet">
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
